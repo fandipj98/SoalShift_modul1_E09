@@ -3,20 +3,9 @@ Kelompok E09
 
 1.	Penjelasan Soal Nomor 1
 
-#!/bin/bash
 
-unzip /home/fandipj/nature.zip -d /home/fandipj
-
-a=0
-
-for x in /home/fandipj/nature/*.jpg
-do
-`base64 -d $x > /home/fandipj/nature/$a.jpg`
-`xxd -r /home/fandipj/nature/$a.jpg > /home/fandipj/nature/hasil$a.jpg`
-`rm /home/fandipj/nature/$a.jpg $x`
-a=$(($a+1))
-done
-
+        SoalShift_modul1_E09/soal1.sh
+      
 Syntax diatas merupakan shell script untuk penyelesaian soal nomor 1. Pertama – tama file nature.zip di unzip ke folder tujuan /home/fandipj dengan menggunakan syntax:
 
 unzip /home/fandipj/nature.zip -d /home/fandipj
