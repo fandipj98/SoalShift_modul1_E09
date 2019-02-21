@@ -1,0 +1,9 @@
+#Nomor 1
+14 14 14 2 * /bin/bash /home/fandipj/Downloads/soal1.sh >> /home/fandipj/Downloads/err.log 2>&1
+0,5,10,15,20,25,30,35,40,45,50,55 * * 2 5 /bin/bash /home/fandipj/Downloads/soal1.sh >> /home/fandipj/Downloads/err.log 2>&1
+
+#Nomor 4
+@hourly /bin/bash /home/fandipj/Donwloads/soal4.sh >> /home/fandipj/Downloads/err.log 2>&1
+
+#Nomor 5
+2,8,14,20,26 * * * * /bin/bash /home/fandipj/Downloads/soal5.sh >> /home/fandipj/Downloads/err.log 2>&1
