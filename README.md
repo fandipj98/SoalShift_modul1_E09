@@ -3,7 +3,7 @@
 ## Nomor 1
 ### Soal:
 
-Anda diminta tolong oleh teman anda untuk mengembalikan filenya yang telah dienkripsi oleh seseorang menggunakan bash script, file yang dimaksud adalah nature.zip. Karena terlalu mudah kalian memberikan syarat akan membuka seluruh file tersebut jika pukul 14:14 pada tanggal 14 Februari atau hari tersebut adalah hari jumat pada bulan Februari.
+1. Anda diminta tolong oleh teman anda untuk mengembalikan filenya yang telah dienkripsi oleh seseorang menggunakan bash script, file yang dimaksud adalah nature.zip. Karena terlalu mudah kalian memberikan syarat akan membuka seluruh file tersebut jika pukul 14:14 pada tanggal 14 Februari atau hari tersebut adalah hari jumat pada bulan Februari.
 
 ### Jawaban:
 ```
@@ -45,7 +45,7 @@ Agar perintah – perintah syntax diatas dapat dieksekusi pada pukul 14:14 pada 
 ## Nomor 2
 ### Soal:
 
-Anda merupakan pegawai magang pada sebuah perusahaan retail, dan anda diminta untuk memberikan laporan berdasarkan file WA_Sales_Products_2012-14.csv. Laporan yang diminta berupa:
+2. Anda merupakan pegawai magang pada sebuah perusahaan retail, dan anda diminta untuk memberikan laporan berdasarkan file WA_Sales_Products_2012-14.csv. Laporan yang diminta berupa:
 
 a. Tentukan negara dengan penjualan(quantity) terbanyak pada tahun 2012.
 
@@ -122,7 +122,7 @@ Pertama – tama perlu diambil nilai dari variable a dan b pada nomor 2a dan 2b.
 ## Nomor 3
 ### Soal:
 
-Buatlah sebuah script bash yang dapat menghasilkan password secara acak sebanyak 12 karakter yang terdapat huruf besar, huruf kecil, dan angka. Password acak tersebut disimpan pada file berekstensi .txt dengan ketentuan pemberian nama sebagai berikut:
+3. Buatlah sebuah script bash yang dapat menghasilkan password secara acak sebanyak 12 karakter yang terdapat huruf besar, huruf kecil, dan angka. Password acak tersebut disimpan pada file berekstensi .txt dengan ketentuan pemberian nama sebagai berikut:
 
 a. Jika tidak ditemukan file password1.txt maka password acak tersebut disimpan pada file bernama password1.txt
 
@@ -161,7 +161,7 @@ Jika tidak ada, maka dibuat file password1.txt yang berisikan password unique se
 ## Nomor 4
 ### Soal:
 
-Lakukan backup file syslog setiap jam dengan format nama file “jam:menit tanggal- bulan-tahun”. Isi dari file backup terenkripsi dengan konversi huruf (string manipulation) yang disesuaikan dengan jam dilakukannya backup misalkan sebagai berikut:
+4. Lakukan backup file syslog setiap jam dengan format nama file “jam:menit tanggal- bulan-tahun”. Isi dari file backup terenkripsi dengan konversi huruf (string manipulation) yang disesuaikan dengan jam dilakukannya backup misalkan sebagai berikut:
 
 a. Huruf b adalah alfabet kedua, sedangkan saat ini waktu menunjukkan pukul 12, sehingga huruf b diganti dengan huruf alfabet yang memiliki urutan ke 12+2 = 14.
 
@@ -219,7 +219,7 @@ Kemudian untuk mendekripsi file yang sudah terenkripsi tersebut, pertama -tama d
 ## Nomor 5
 ### Soal:
 
-Buatlah sebuah script bash untuk menyimpan record dalam syslog yang memenuhi kriteria berikut:
+5. Buatlah sebuah script bash untuk menyimpan record dalam syslog yang memenuhi kriteria berikut:
 
 a. Tidak mengandung string “sudo”, tetapi mengandung string “cron”, serta buatlah pencarian stringnya tidak bersifat case sensitive, sehingga huruf kapital atau tidak, tidak menjadi masalah.
 
