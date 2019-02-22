@@ -1,6 +1,6 @@
 # Laporan Resmi Sistem Operasi Modul1 E09
 
-1.	Penjelasan Soal Nomor 1
+###1.	Penjelasan Soal Nomor 1
 
 	```
 	#!/bin/bash
@@ -20,9 +20,9 @@
       
 Syntax diatas merupakan shell script untuk penyelesaian soal nomor 1. Pertama – tama file nature.zip di unzip ke folder tujuan /home/fandipj dengan menggunakan syntax:
 
-	```
+```
 	unzip /home/fandipj/nature.zip -d /home/fandipj
-	```
+```
 
 Setelah file nature.zip diextract, akan muncul banyak file .jpg yang terenkripsi. Kemudian untuk mendekripsifile tersebut maka kita menggunakan syntax:
 	```
@@ -39,7 +39,7 @@ Agar perintah – perintah syntax diatas dapat dieksekusi pada pukul 14:14 pada 
 	14 14 14 2 * /bin/bash /home/fandipj/Modul1/soal1.sh >> /home/fandipj/Modul1/err.log 2>&1
 	0,5,10,15,20,25,30,35,40,45,50,55 * * 2 5 /bin/bash /home/fandipj/Modul1/soal1.sh >> /home/fandipj/Modul1/err.log 2>&1
 	```
-2.	Penjelasan Soal Nomor 2
+###2.	Penjelasan Soal Nomor 2
 	```
 	#!/bin/bash
 
