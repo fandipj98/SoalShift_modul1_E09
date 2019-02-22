@@ -1,6 +1,6 @@
 # Laporan Resmi Sistem Operasi Modul1 E09
 
-### 1.	Penjelasan Soal Nomor 1
+### 1.	Penjelasan Nomor 1
 ```
 	#!/bin/bash
 
@@ -37,7 +37,7 @@ Agar perintah – perintah syntax diatas dapat dieksekusi pada pukul 14:14 pada 
 	0,5,10,15,20,25,30,35,40,45,50,55 * * 2 5 /bin/bash /home/fandipj/Modul1/soal1.sh >> /home/fandipj/Modul1/err.log 2>&1
 ```
 
-### 2.	Penjelasan Soal Nomor 2
+### 2.	Penjelasan Nomor 2
 ```
 	#!/bin/bash
 
@@ -103,7 +103,7 @@ c.	Untuk 3 product yang memberikan penjualan terbanyak sesuai dengan syarat nega
 ```
 Pertama – tama perlu diambil nilai dari variable a dan b pada nomor 2a dan 2b. Kemudian kolom 10 pada file WA_Sales_Products_2012-14.csv digrouping sesuai dengan setiap elemen pada kolom 6 (product) dengan syarat negaranya adalah United States dan product linenya adalah Personal Accessories, atau Camping Equipment, atau Mountaineering Equipment serta tahunnya adalah 2012. Kemudian hasilnya di sorting berdasarkan total penjualan, kemudian diambil kolom pertama dari 3 record teratas.
 
-### 3.	Penjelasan Soal Nomor 3
+### 3.	Penjelasan Nomor 3
 ```
 	#!/bin/bash
 
@@ -129,7 +129,7 @@ Pertama – tama kita perlu mengecek dalam folder tertentu apakah ada file denga
 
 Jika tidak ada, maka dibuat file password1.txt yang berisikan password unique secara acak sebanyak 12 karakter yang terdiri dari huruf besar, huruf kecil, dan angka. Agar password yang dibuat tidak ada yang sama dengan password lain yang sebelumnya, maka untuk beberapa karakter bagian depannya dibuat sebagai angka yang mewakili nama file tersebut. Jadi misalnya password4.txt isi passwordnya akan diawali dengan angka 4, password7.txt isi passwordnya akan diawali dengan angka 7, begitu pula untuk file password lainnya sehingga akan menghasilkan password yang pasti unique.
 
-### 4.	Penjelasan Soal Nomor 4
+### 4.	Penjelasan Nomor 4
 ```
 	#!/bin/bash
 
@@ -172,7 +172,7 @@ Kemudian untuk mendekripsi file yang sudah terenkripsi tersebut, pertama -tama d
 	< "$NOW" > "$NOW Decrypt" tr "${trans1[*]}" "${source1[*]}"	
 ```
 
-### 5.	Penjelasan Soal Nomor 5
+### 5.	Penjelasan Nomor 5
 ```
 	#!/bin/bash
 
