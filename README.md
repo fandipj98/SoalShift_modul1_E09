@@ -14,9 +14,8 @@ do
 	`xxd -r /home/fandipj/nature/$a.jpg > /home/fandipj/nature/hasil$a.jpg`
 	`rm /home/fandipj/nature/$a.jpg $x`
 	a=$(($a+1))
-done```
-
-
+done
+```
       
 Syntax diatas merupakan shell script untuk penyelesaian soal nomor 1. Pertama – tama file nature.zip di unzip ke folder tujuan /home/fandipj dengan menggunakan syntax:
 
