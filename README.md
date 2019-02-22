@@ -41,6 +41,9 @@ Agar perintah – perintah syntax diatas dapat dieksekusi pada pukul 14:14 pada 
 	14 14 14 2 * /bin/bash /home/fandipj/Modul1/soal1.sh >> /home/fandipj/Modul1/err.log 2>&1
 	0,5,10,15,20,25,30,35,40,45,50,55 * * 2 5 /bin/bash /home/fandipj/Modul1/soal1.sh >> /home/fandipj/Modul1/err.log 2>&1
 ```
+### Screenshot:
+
+![alt text](https://github.com/fandipj98/SoalShift_modul1_E09/blob/master/Screenshot/ss1.png)
 
 ## Nomor 2
 ### Soal:
@@ -115,6 +118,9 @@ c.	Untuk 3 product yang memberikan penjualan terbanyak sesuai dengan syarat nega
 	echo ${c[@]}
 ```
 Pertama – tama perlu diambil nilai dari variable a dan b pada nomor 2a dan 2b. Kemudian kolom 10 pada file WA_Sales_Products_2012-14.csv digrouping sesuai dengan setiap elemen pada kolom 6 (product) dengan syarat negaranya adalah United States dan product linenya adalah Personal Accessories, atau Camping Equipment, atau Mountaineering Equipment serta tahunnya adalah 2012. Kemudian hasilnya di sorting berdasarkan total penjualan, kemudian diambil kolom pertama dari 3 record teratas.
+### Screenshot:
+
+![alt text](https://github.com/fandipj98/SoalShift_modul1_E09/blob/master/Screenshot/ss2.png)
 
 ## Nomor 3
 ### Soal:
@@ -150,6 +156,9 @@ Pertama – tama perlu diambil nilai dari variable a dan b pada nomor 2a dan 2b.
 Pertama – tama kita perlu mengecek dalam folder tertentu apakah ada file dengan nama password1.txt, jika terdapat file dengan nama password1.txt, maka dalam folder tersebut perlu kita cek apakah file password$a.txt ke a (1,2,3,…..)  sudah ada atau tidak. Kemudian create file password$a.txt yang belum ada secara berurutan dengan file – file yang sudah ada sebelumnya. 
 
 Jika tidak ada, maka dibuat file password1.txt yang berisikan password unique secara acak sebanyak 12 karakter yang terdiri dari huruf besar, huruf kecil, dan angka. Agar password yang dibuat tidak ada yang sama dengan password lain yang sebelumnya, maka untuk beberapa karakter bagian depannya dibuat sebagai angka yang mewakili nama file tersebut. Jadi misalnya password4.txt isi passwordnya akan diawali dengan angka 4, password7.txt isi passwordnya akan diawali dengan angka 7, begitu pula untuk file password lainnya sehingga akan menghasilkan password yang pasti unique.
+### Screenshot:
+
+![alt text](https://github.com/fandipj98/SoalShift_modul1_E09/blob/master/Screenshot/ss3.png)
 
 ## Nomor 4
 ### Soal:
@@ -203,6 +212,11 @@ Kemudian untuk mendekripsi file yang sudah terenkripsi tersebut, pertama -tama d
 	trans1+=( ${trans2[@]} )
 	< "$NOW" > "$NOW Decrypt" tr "${trans1[*]}" "${source1[*]}"	
 ```
+### Screenshot:
+
+![alt text](https://github.com/fandipj98/SoalShift_modul1_E09/blob/master/Screenshot/ss4.png)
+
+![alt text](https://github.com/fandipj98/SoalShift_modul1_E09/blob/master/Screenshot/ss4decrypt.png)
 
 ## Nomor 5
 ### Soal:
@@ -223,3 +237,6 @@ Pertama – tama, kita mengambil isi dari file syslog yang tidak mengandung stri
 ```
 	2,8,14,20,26 * * * * /bin/bash /home/fandipj/Modul1/soal5.sh >> /home/fandipj/Modul1/err.log 2>&1
 ```
+### Screenshot:
+
+![alt text](https://github.com/fandipj98/SoalShift_modul1_E09/blob/master/Screenshot/ss5.png)
