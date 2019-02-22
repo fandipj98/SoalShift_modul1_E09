@@ -1,6 +1,11 @@
 # Laporan Resmi Sistem Operasi Modul1 E09
 
-### 1.	Penjelasan Nomor 1
+## Nomor 1
+### Soal:
+
+Anda diminta tolong oleh teman anda untuk mengembalikan filenya yang telah dienkripsi oleh seseorang menggunakan bash script, file yang dimaksud adalah nature.zip. Karena terlalu mudah kalian memberikan syarat akan membuka seluruh file tersebut jika pukul 14:14 pada tanggal 14 Februari atau hari tersebut adalah hari jumat pada bulan Februari.
+
+### Jawaban:
 ```
 	#!/bin/bash
 
@@ -37,7 +42,18 @@ Agar perintah – perintah syntax diatas dapat dieksekusi pada pukul 14:14 pada 
 	0,5,10,15,20,25,30,35,40,45,50,55 * * 2 5 /bin/bash /home/fandipj/Modul1/soal1.sh >> /home/fandipj/Modul1/err.log 2>&1
 ```
 
-### 2.	Penjelasan Nomor 2
+## Nomor 2
+### Soal:
+
+Anda merupakan pegawai magang pada sebuah perusahaan retail, dan anda diminta untuk memberikan laporan berdasarkan file WA_Sales_Products_2012-14.csv. Laporan yang diminta berupa:
+
+a. Tentukan negara dengan penjualan(quantity) terbanyak pada tahun 2012.
+
+b. Tentukan tiga product line yang memberikan penjualan(quantity) terbanyak pada soal poin a.
+
+c. Tentukan tiga product yang memberikan penjualan(quantity) terbanyak berdasarkan tiga product line yang didapatkan pada soal poin b.
+
+### Jawaban:
 ```
 	#!/bin/bash
 
@@ -103,7 +119,20 @@ c.	Untuk 3 product yang memberikan penjualan terbanyak sesuai dengan syarat nega
 ```
 Pertama – tama perlu diambil nilai dari variable a dan b pada nomor 2a dan 2b. Kemudian kolom 10 pada file WA_Sales_Products_2012-14.csv digrouping sesuai dengan setiap elemen pada kolom 6 (product) dengan syarat negaranya adalah United States dan product linenya adalah Personal Accessories, atau Camping Equipment, atau Mountaineering Equipment serta tahunnya adalah 2012. Kemudian hasilnya di sorting berdasarkan total penjualan, kemudian diambil kolom pertama dari 3 record teratas.
 
-### 3.	Penjelasan Nomor 3
+## Nomor 3
+### Soal:
+
+Buatlah sebuah script bash yang dapat menghasilkan password secara acak sebanyak 12 karakter yang terdapat huruf besar, huruf kecil, dan angka. Password acak tersebut disimpan pada file berekstensi .txt dengan ketentuan pemberian nama sebagai berikut:
+
+a. Jika tidak ditemukan file password1.txt maka password acak tersebut disimpan pada file bernama password1.txt
+
+b. Jika file password1.txt sudah ada maka password acak baru akan disimpan pada file bernama password2.txt dan begitu seterusnya.
+
+c. Urutan nama file tidak boleh ada yang terlewatkan meski filenya dihapus.
+
+d. Password yang dihasilkan tidak boleh sama.
+
+### Jawaban:
 ```
 	#!/bin/bash
 
@@ -129,7 +158,22 @@ Pertama – tama kita perlu mengecek dalam folder tertentu apakah ada file denga
 
 Jika tidak ada, maka dibuat file password1.txt yang berisikan password unique secara acak sebanyak 12 karakter yang terdiri dari huruf besar, huruf kecil, dan angka. Agar password yang dibuat tidak ada yang sama dengan password lain yang sebelumnya, maka untuk beberapa karakter bagian depannya dibuat sebagai angka yang mewakili nama file tersebut. Jadi misalnya password4.txt isi passwordnya akan diawali dengan angka 4, password7.txt isi passwordnya akan diawali dengan angka 7, begitu pula untuk file password lainnya sehingga akan menghasilkan password yang pasti unique.
 
-### 4.	Penjelasan Nomor 4
+## Nomor 4
+### Soal:
+
+Lakukan backup file syslog setiap jam dengan format nama file “jam:menit tanggal- bulan-tahun”. Isi dari file backup terenkripsi dengan konversi huruf (string manipulation) yang disesuaikan dengan jam dilakukannya backup misalkan sebagai berikut:
+
+a. Huruf b adalah alfabet kedua, sedangkan saat ini waktu menunjukkan pukul 12, sehingga huruf b diganti dengan huruf alfabet yang memiliki urutan ke 12+2 = 14.
+
+b. Hasilnya huruf b menjadi huruf n karena huruf n adalah huruf ke empat belas, dan seterusnya.
+
+c. setelah huruf z akan kembali ke huruf a
+
+d. Backup file syslog setiap jam.
+
+e. dan buatkan juga bash script untuk dekripsinya.
+
+### Jawaban:
 ```
 	#!/bin/bash
 
@@ -172,7 +216,20 @@ Kemudian untuk mendekripsi file yang sudah terenkripsi tersebut, pertama -tama d
 	< "$NOW" > "$NOW Decrypt" tr "${trans1[*]}" "${source1[*]}"	
 ```
 
-### 5.	Penjelasan Nomor 5
+## Nomor 5
+### Soal:
+
+Buatlah sebuah script bash untuk menyimpan record dalam syslog yang memenuhi kriteria berikut:
+
+a. Tidak mengandung string “sudo”, tetapi mengandung string “cron”, serta buatlah pencarian stringnya tidak bersifat case sensitive, sehingga huruf kapital atau tidak, tidak menjadi masalah.
+
+b. Jumlah field (number of field) pada baris tersebut berjumlah kurang dari 13.
+
+c. Masukkan record tadi ke dalam file logs yang berada pada direktori /home/[user]/modul1.
+
+d. Jalankan script tadi setiap 6 menit dari menit ke 2 hingga 30, contoh 13:02, 13:08, 13:14, dst.
+
+### Jawaban:
 ```
 	#!/bin/bash
 
