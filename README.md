@@ -94,6 +94,7 @@ b.	Untuk menentukan 3 product line yang memberikan penjualan terbanyak pada nega
 Pertama – tama perlu diambil nilai dari variable a pada nomor 2a (United States). Kemudian kolom 10 pada file WA_Sales_Products_2012-14.csv digrouping sesuai dengan setiap elemen pada kolom 4 (product line) dengan syarat negaranya adalah United States. Kemudian hasilnya di sorting berdasarkan total penjualan, kemudian diambil kolom pertama dari 3 record teratas.
 
 c.	Untuk 3 product yang memberikan penjualan terbanyak sesuai dengan syarat negara adalah United States, product line adalah Personal Accessories, Camping Equipment, Mountaineering Equipment, maka digunakan shell script dan syntax awk seperti berikut:
+	
 	```
 	declare -A c
 
