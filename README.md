@@ -2,7 +2,8 @@
 
 1.	Penjelasan Soal Nomor 1
 
-```#!/bin/bash
+```
+#!/bin/bash
 
 unzip /home/fandipj/nature.zip -d /home/fandipj
 
@@ -19,12 +20,14 @@ done
       
 Syntax diatas merupakan shell script untuk penyelesaian soal nomor 1. Pertama – tama file nature.zip di unzip ke folder tujuan /home/fandipj dengan menggunakan syntax:
 
+```
 unzip /home/fandipj/nature.zip -d /home/fandipj
+```
 
 Setelah file nature.zip diextract, akan muncul banyak file .jpg yang terenkripsi. Kemudian untuk mendekripsifile tersebut maka kita menggunakan syntax:
-
+```
 `base64 -d $x > /home/fandipj/nature/$a.jpg`
-
+```
 Setelah didekripsi ternyata bilangan hexa dari file tersebut masih belum berbentuk file ekstensi .jpg. Oleh karena itu, file hasil dekripsitersebut perlu untuk di reverse dengan menggunakan syntax:
 
 `xxd -r /home/fandipj/nature/$a.jpg > /home/fandipj/nature/hasil$a.jpg`
