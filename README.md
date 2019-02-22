@@ -118,7 +118,13 @@ Pertama – tama perlu diambil nilai dari variable a dan b pada nomor 2a dan 2b.
 		then
 			a=$((a+1))
 		else
-			< /dev/urandom tr -dc A-Za-z0-9 | head -c 12 > password$a.txt
+			len=${#a}
+			len1=$(((12-len)/2))
+			len2=$((12-len-len1))
+			ran1=$a
+			ran2=$(cat /dev/urandom | tr -dc A-Z | head -c "$len1")
+			ran3=$(cat /dev/urandom | tr -dc a-z | head -c "$len2")
+			echo $ran1$ran2$ran3 > password$a.txt
 			break
 		fi
 	done
